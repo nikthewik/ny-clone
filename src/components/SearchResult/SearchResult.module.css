@@ -1,0 +1,124 @@
+.articleContainer {
+  display: flex;
+  width: 100%;
+  max-width: 52.2rem;
+  padding: 1.5rem 0;
+  margin: 0 1.5rem;
+  border-bottom: 1px solid var(--clr-w3);
+}
+
+.articleContainer:first-of-type {
+  border-top: 1px solid var(--clr-w3);
+}
+
+.date {
+  color: var(--clr-b3);
+  font-family: var(--ff-detail);
+  font-size: 0.59rem;
+  width: 7.813rem;
+}
+
+.articleInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 7.813rem);
+}
+
+.textContainer {
+  width: 60%;
+}
+
+.section {
+  color: var(--clr-b2);
+  font-family: var(--ff-detail);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  margin-bottom: 0.313rem;
+}
+
+.title {
+  color: var(--clr-b1);
+  font-family: var(--ff-title);
+  font-size: clamp(1.1rem, 2.9vw, 1.5rem);
+  margin-bottom: 0.313rem;
+}
+
+.snippet {
+  color: var(--clr-b2);
+  font-family: var(--ff-body);
+  font-size: clamp(0.8rem, 2.13vw, 0.88rem);
+}
+
+.author {
+  color: var(--clr-b1);
+  font-family: var(--ff-title);
+  font-size: 0.7rem;
+  margin: 0.35rem 0;
+}
+
+.readingTime {
+  color: var(--clr-b4);
+  font-family: var(--ff-detail);
+  font-size: 0.52rem;
+  margin-top: 0.65rem;
+  letter-spacing: 1px;
+}
+
+.divider {
+  border: 0.5px solid var(--clr-w3);
+  width: 5rem;
+  margin: 1.1rem 0 0.938rem 0;
+}
+
+.printContainer {
+  color: var(--clr-b1);
+  font-family: var(--ff-title);
+  font-size: 0.85rem;
+}
+
+.printEdition {
+  color: var(--clr-b1);
+  font-family: var(--ff-detail);
+  font-size: 0.62rem;
+  margin-right: 0.438rem;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  max-width: 12.813rem;
+  min-width: 7.5rem;
+  margin-left: 2.5rem;
+}
+
+.img {
+  color: var(--clr-b1);
+  width: clamp(7.5rem, 20vw, 12.813rem);
+  height: clamp(5rem, 15vw, 8.75rem);
+  object-fit: cover;
+}
+
+@media (max-width: 599px) {
+  .articleContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .date {
+    width: 100%;
+    margin-bottom: 0.438rem;
+  }
+
+  .articleInfoContainer {
+    width: 100%;
+  }
+
+  .textContainer {
+    width: 70%;
+  }
+
+  .imgContainer {
+    width: 30%;
+  }
+}

@@ -1,0 +1,10 @@
+.todayPaper {
+  color: var(--clr-b5);
+  font-family: var(--ff-detail);
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.todayPaper:hover {
+  color: var(--clr-blue1);
+}

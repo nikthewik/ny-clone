@@ -1,0 +1,23 @@
+.container {
+  padding-top: 1.5rem;
+}
+
+.spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid var(--clr-w3);
+  border-bottom-color: var(--clr-b2);
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: transparent;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

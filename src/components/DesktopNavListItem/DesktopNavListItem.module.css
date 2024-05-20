@@ -1,0 +1,26 @@
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 0.9rem;
+  font-family: var(--ff-detail);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--clr-b1);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.link {
+  color: var(--clr-b1);
+}
+
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  width: 0.5rem;
+}

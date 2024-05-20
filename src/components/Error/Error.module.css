@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 20rem;
+  height: 20rem;
+  margin-bottom: 3rem;
+}
+
+.error {
+  font-family: var(--ff-detail-bold);
+  font-size: 5rem;
+}
+
+.title {
+  font-family: var(--ff-title);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-family: var(--ff-detail);
+  font-size: 0.7rem;
+}
+
+.button {
+  color: var(--clr-b1);
+  font-family: var(--ff-detail-bold);
+  font-size: 0.6rem;
+  padding: 0.6rem;
+  margin-top: 1.5rem;
+  border: 1px solid var(--clr-b1);
+  border-radius: 3px;
+}

@@ -1,0 +1,19 @@
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: clamp(11.813rem, 30.6vw, 14.063rem);
+  margin-top: 0.438rem;
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 27.976rem;
+  }
+
+  .logoBottom {
+    width: 12rem;
+  }
+}

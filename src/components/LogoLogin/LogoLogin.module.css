@@ -1,0 +1,11 @@
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.125rem;
+  height: 2.125rem;
+}
+
+.logo {
+  width: 1.5rem;
+}

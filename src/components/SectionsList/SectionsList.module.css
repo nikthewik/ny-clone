@@ -1,0 +1,99 @@
+.section,
+.sectionBottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.2rem;
+}
+
+.titleSection {
+  color: var(--clr-b4);
+  font-family: var(--ff-detail);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.listContainer,
+.listBottomContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.list,
+.listBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  font-family: var(--ff-detail);
+}
+
+.list {
+  font-size: 1rem;
+}
+
+.list li a,
+.listBottom li a {
+  color: var(--clr-b1);
+}
+
+.listBottom {
+  font-size: 0.8rem;
+}
+
+.column2 {
+  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  .section,
+  .sectionBottom {
+    align-items: center;
+    width: 100%;
+    max-width: 30.625rem;
+    margin-top: 0;
+  }
+
+  .section {
+    padding: 1.8rem 0;
+  }
+
+  .sectionBottom {
+    padding: 1rem 0 1.3rem 0;
+  }
+
+  .titleSection {
+    font-size: 0.6rem;
+    align-self: flex-start;
+  }
+
+  .listContainer,
+  .listBottomContainer {
+    margin-bottom: 0;
+  }
+
+  .listBottomContainer {
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .list,
+  .listBottom {
+    font-size: 0.7rem;
+  }
+
+  .list li a,
+  .listBottom li a {
+    color: var(--clr-b1);
+  }
+
+  .list li a:hover,
+  .listBottom li a:hover {
+    color: var(--clr-blue1);
+  }
+
+  .listBottom {
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,9 @@
+.arrowIcon {
+  height: 1.5rem;
+  width: 0.813rem;
+  padding: 0.5rem 0;
+}
+
+.arrowUp {
+  rotate: 180deg;
+}

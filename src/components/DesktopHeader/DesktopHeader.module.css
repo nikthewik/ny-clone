@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-w1);
+  padding: 0 1.5rem;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.25rem 0;
+}
+
+.dateContainer {
+  position: absolute;
+  left: 0;
+}
+
+.mediumContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dividerContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin: 0 1.5rem;
+}

@@ -1,0 +1,13 @@
+.hamburger {
+  width: 1rem;
+}
+
+.button {
+  width: 2.125rem;
+  height: 2.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+}

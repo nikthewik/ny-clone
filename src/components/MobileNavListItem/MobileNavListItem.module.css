@@ -1,0 +1,8 @@
+.listItem {
+  border-bottom: 1px solid var(--clr-w3);
+  list-style: none;
+}
+
+.firstItem:first-of-type {
+  border-top: 1px solid var(--clr-w3);
+}

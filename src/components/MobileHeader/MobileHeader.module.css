@@ -1,0 +1,18 @@
+.topSection {
+  justify-content: space-between;
+  padding: 0.5rem 0.938rem;
+  height: clamp(3rem, 7.8vw, 3.313rem);
+}
+
+.bottomSection {
+  justify-content: center;
+  padding: 0.813rem 1.25rem 0.75rem 1.25rem;
+  height: 2.313rem;
+}
+
+.topSection,
+.bottomSection {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--clr-w3);
+}

@@ -1,0 +1,107 @@
+/* /////////////////////////////////////////////////////////////////// */
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--clr-w1);
+  font-family: var(--ff-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  position: relative;
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* VARIABLES */
+:root {
+  /* BLACK */
+  --clr-b1: #121212;
+  --clr-b2: #5a5a5a;
+  --clr-b3: #666666;
+  --clr-b4: #727272;
+  --clr-b5: #787878;
+
+  /* WHITE */
+  --clr-w1: #ffffff;
+  --clr-w2: #f7f7f7;
+  --clr-w3: #dfdfdf;
+  --clr-w4: #b3b3b3;
+
+  /* BLUE */
+  --clr-blue1: #3268916c;
+  --clr-blue2: #567b9534;
+
+  /* FONTS */
+  --ff-heading: "KarnakProBold", Georgia, serif;
+  --ff-title: "CheltenhamBold", Georgia, serif;
+  --ff-body: "Imperial", Georgia, serif;
+  --ff-detail: "FranklinBook", sans-serif;
+  --ff-detail-bold: "FranklinDemi", sans-serif;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+/* FONTS */
+
+@font-face {
+  font-family: "KarnakProBold";
+  src: url(./fonts/karnak-pro-bold/karnak-pro-bold.woff) format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CheltenhamBold";
+  src: url(./fonts/cheltenham-bold/cheltenham-bold.woff2) format("woff2");
+  src: url(./fonts/cheltenham-bold/cheltenham-bold.woff) format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Imperial";
+  src: url(./fonts/imperial/imperial.woff2) format("woff2");
+  src: url(./fonts/imperial/imperial.woff) format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FranklinBook";
+  src: url(./fonts/franklin-book/franklin-book.woff2) format("woff2");
+  src: url(./fonts/franklin-book/franklin-book.woff) format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FranklinDemi";
+  src: url(./fonts/franklin-demi/franklin-demi.woff2) format("woff2");
+  src: url(./fonts/franklin-demi/franklin-demi.woff) format("woff");
+  font-display: swap;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
