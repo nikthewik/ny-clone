@@ -5,6 +5,7 @@
   align-items: center;
   background-color: transparent;
   font-family: var(--ff-detail-bold);
+  color: var(--clr-b1);
 }
 
 .mobileMenu {
