@@ -2,7 +2,7 @@
 
 A **clone** of The New York Times made for the React exam on [start2impact University](https://www.start2impact.it/).
 
-![The New York Clone preview](https://raw.githubusercontent.com/nikthewik/ny-clone/main/src/data/img/preview-ny-clone.webp)
+![The New York Clone preview](https://raw.githubusercontent.com/nikthewik/ny-clone/main/src/data/img/preview-nyclone.gif)
 
 ## Table of Contents
 
