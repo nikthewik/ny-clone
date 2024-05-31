@@ -2,7 +2,7 @@
 
 A **clone** of The New York Times made for the React exam on [start2impact University](https://www.start2impact.it/).
 
-![The New York Clone preview](https://raw.githubusercontent.com/nikthewik/ny-clone/main/src/data/img/preview-nyclone.gif)
+![The New York Clone preview](https://raw.githubusercontent.com/nikthewik/ny-clone/main/src/assets/img/preview-nyclone.gif)
 
 ## Table of Contents
 
@@ -32,6 +32,7 @@ The use of React Router, React Hooks, Redux, Context API or Axios is a bonus.
 - React
 - React Router
 - React Responsive
+- React Helmet
 - React Query (Tanstack Query)
 - Redux & Redux Toolkit
 - Axios

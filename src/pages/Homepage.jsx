@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { Helmet } from "react-helmet";
 
 import getTopStories from "../services/apiTopStories";
 
@@ -15,10 +15,6 @@ import DesktopNavBottom from "../components/DesktopNavBottom/DesktopNavBottom";
 import Footer from "../components/Footer/Footer";
 
 function Homepage() {
-  useEffect(() => {
-    document.title = `The New York Clone`;
-  }, []);
-
   const { isPending, isError, data, error } = useQuery({
     queryKey: ["topStories"],
     queryFn: getTopStories,
@@ -31,6 +27,10 @@ function Homepage() {
 
   return (
     <>
+      <Helmet>
+        <title>The New York Clone</title>
+      </Helmet>
+
       <Main>
         <div className="container">
           {results.map((article, index) => (

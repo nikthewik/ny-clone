@@ -1,6 +1,6 @@
-import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { Helmet } from "react-helmet";
 
 import capitalizeWord from "../helpers/capitalizeWord";
 import getSectionArticles from "../services/apiSection";
@@ -21,10 +21,6 @@ import Footer from "../components/Footer/Footer";
 function Section() {
   const { section } = useParams();
 
-  useEffect(() => {
-    document.title = `${capitalizeWord(section)} - The New York Clone`;
-  }, [section]);
-
   const { isPending, isError, data, error } = useQuery({
     queryKey: ["section", section],
     queryFn: () => getSectionArticles(section),
@@ -38,6 +34,10 @@ function Section() {
 
   return (
     <>
+      <Helmet>
+        <title>{`${capitalizeWord(section)} - The New York Clone`}</title>
+      </Helmet>
+
       <Main>
         <SectionTitle sectionTitle={sectionTitle} />
         <DividerLine />

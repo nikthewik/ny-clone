@@ -1,7 +1,7 @@
-import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useQuery } from "@tanstack/react-query";
+import { Helmet } from "react-helmet";
 
 import getSearchArticles from "../services/apiSearch";
 
@@ -20,10 +20,6 @@ import Footer from "../components/Footer/Footer";
 function Search() {
   const { search } = useParams();
 
-  useEffect(() => {
-    document.title = `Search - The New York Clone`;
-  }, []);
-
   const sortBy = useSelector((state) => state.query.sort);
 
   const { isPending, isError, data, error } = useQuery({
@@ -38,6 +34,10 @@ function Search() {
 
   return (
     <>
+      <Helmet>
+        <title>Search - The New York Clone</title>
+      </Helmet>
+
       <FormWithFilters hits={response.meta.hits} />
 
       <Main>

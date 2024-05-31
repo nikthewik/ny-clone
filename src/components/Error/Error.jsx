@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import style from "./Error.module.css";
 
@@ -13,13 +13,12 @@ import DesktopNavBottom from "../DesktopNavBottom/DesktopNavBottom";
 import Footer from "../Footer/Footer";
 
 function Error({ isError = false, error = null }) {
-  useEffect(() => {
-    if (isError)
-      document.title = `Ops! Something went wrong... - The New York Clone`;
-  }, [isError]);
-
   return (
     <>
+      <Helmet>
+        <title>Ops! Something went wrong... - The New York Clone</title>
+      </Helmet>
+
       <Main>
         <div className={style.container}>
           <span className={style.error}>{isError ? "OPS!" : "404"}</span>

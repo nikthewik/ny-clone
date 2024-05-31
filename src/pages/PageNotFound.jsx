@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 import Mobile from "../components/MediaQueriesComponents/Mobile";
 import Desktop from "../components/MediaQueriesComponents/Desktop";
@@ -9,12 +9,12 @@ import DesktopNavBottom from "../components/DesktopNavBottom/DesktopNavBottom";
 import Footer from "../components/Footer/Footer";
 
 function PageNotFound() {
-  useEffect(() => {
-    document.title = `404: Page Not Found - The New York Clone`;
-  }, []);
-
   return (
     <>
+      <Helmet>
+        <title>404: Page Not Found - The New York Clone</title>
+      </Helmet>
+
       <Error />
 
       <Mobile>
